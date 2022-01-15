@@ -252,7 +252,7 @@ form.subscribe-form {
 input#mail {
   width: 27rem;
   outline: none;
-  color: #b7b7b7;
+  color: #574b4b;
   padding: 8px 5px;
   font-size: 16px;
   line-height: 13px;
@@ -311,6 +311,7 @@ footer {
 @media screen and (max-width: 688px) {
   .container {
     width: 100%;
+    padding: 0px 12px;
   }
   .product-collection {
     width: 100%;
@@ -342,11 +343,7 @@ footer {
   .company-list {
     display: none;
   }
-  .companis {
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    justify-content: center;
-  }
+
   .products {
     grid-template-columns: auto;
     justify-content: center;
@@ -372,5 +369,49 @@ footer {
   }
   input#mail {
     width: 100%;
+  }
+}
+
+/* tablet design */
+@media screen and (min-width: 689px) and (max-width: 992px) {
+  .container {
+    width: 100%;
+    padding: 0px 20px;
+  }
+  .product-collection {
+    width: 100%;
+  }
+  .full-nav {
+    flex-direction: column-reverse;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .newsletters,
+  .hero-section {
+    flex-direction: column;
+  }
+  .hero-left {
+    order: 2;
+  }
+  .hero-right {
+    order: 1;
+  }
+  .companis {
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .newsletters {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .news-description {
+    width: 400px;
+    text-align: center;
   }
 }
