@@ -328,13 +328,16 @@ footer {
     text-align: center;
   }
   .hero-title {
-    font-size: 4em;
+    font-size: 2em;
+    width: 300px;
+    font-weight: 900;
   }
   .hero-right {
     order: 1;
   }
   .hero-description {
     width: 400px;
+    padding: 0px 40px;
   }
   .company-list {
     display: none;
