@@ -46,6 +46,7 @@ header {
   color: #3a3a3a;
 }
 /* hero section */
+.newsletters,
 .hero-section {
   display: flex;
   align-items: center;
@@ -109,6 +110,7 @@ header {
   padding: 30px 50px;
 }
 .company {
+  cursor: pointer;
   max-width: 150px;
   display: flex;
   justify-content: center;
@@ -139,7 +141,7 @@ product collection section
   justify-content: space-between;
   width: 329px;
   height: 476px;
-
+  cursor: pointer;
   padding-bottom: 10px;
   background: #ffffff;
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
@@ -214,8 +216,59 @@ button.btn {
   font-weight: bold;
   font-size: 16px;
   color: rgba(224, 44, 109, 0.87);
+  cursor: pointer;
+}
+/* newsletter section */
+.news-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.news-banner img {
+  width: 302.54px;
+  height: 310.01px;
 }
 
+.news-title {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 17px;
+  letter-spacing: 0.1em;
+  color: #000000;
+}
+.news-heading h1 {
+  font-weight: bold;
+  font-size: 41px;
+  line-height: 37px;
+  letter-spacing: 0.1em;
+  color: rgba(255, 53, 77, 1);
+}
+
+form.subscribe-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+input#mail {
+  width: 27rem;
+  outline: none;
+  color: #b7b7b7;
+  padding: 8px 5px;
+  font-size: 16px;
+  line-height: 13px;
+  border-radius: 10px 0px 0px 10px;
+  border: 0.5px solid #b7b7b7;
+}
+input#submit {
+  width: 8rem;
+  color: white;
+  padding: 9px 8px;
+  background: linear-gradient(274.05deg, #ff354d -37.86%, #fe6108 125.4%);
+  border-radius: 0px 4px 4px 0px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
 /* footer section */
 footer {
   background-color: rgba(10, 8, 38, 1);
@@ -249,4 +302,7 @@ footer {
 }
 .social-icon {
   width: 17px;
+}
+.social a {
+  color: white;
 }
