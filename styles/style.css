@@ -306,3 +306,68 @@ footer {
 .social a {
   color: white;
 }
+
+/* mobile design */
+@media screen and (max-width: 688px) {
+  .container {
+    width: 100%;
+  }
+  .product-collection {
+    width: 100%;
+  }
+  .newsletters,
+  .hero-section {
+    flex-direction: column;
+  }
+  .hero-left {
+    order: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    text-align: center;
+  }
+  .hero-title {
+    font-size: 4em;
+  }
+  .hero-right {
+    order: 1;
+  }
+  .hero-description {
+    width: 400px;
+  }
+  .company-list {
+    display: none;
+  }
+  .companis {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+  }
+  .products {
+    grid-template-columns: auto;
+    justify-content: center;
+  }
+
+  .full-nav {
+    justify-content: center;
+  }
+  .nav-heading {
+    text-align: center;
+  }
+  .nav-list {
+    display: none;
+  }
+  .news-heading {
+    width: 400px;
+    text-align: center;
+  }
+  .subscribe-form {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  input#mail {
+    width: 100%;
+  }
+}
