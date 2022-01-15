@@ -94,11 +94,15 @@ header {
 .hero-right {
   display: flex;
   justify-content: flex-end;
+  cursor: pointer;
 }
 .hero-right img {
   background-image: url(../resources/images/Circle-design.svg);
 }
-
+.hero-right > img:hover {
+  transform: rotate(30deg) skewY(10deg);
+  transition: transform 2s cubic-bezier(0.72, 0.68, 0.17, 0.7);
+}
 /* collaboration  section */
 .company-list {
   box-shadow: 1px 0px 3px -2px;
@@ -154,8 +158,13 @@ product collection section
   align-items: center;
   justify-content: center;
   padding-top: 17px;
+  overflow: hidden;
 }
-
+.product-banner img:hover {
+  transform: scale(1.6) skew(17deg);
+  transition: transform 2s ease-in-out;
+  box-shadow: -2px 3px 18px -3px rgb(0 0 0 / 84%);
+}
 .product-detils {
   padding: 0px 15px;
 }
